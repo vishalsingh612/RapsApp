@@ -415,7 +415,7 @@
             padding: 8px 12px 10px;
             position: absolute;
             text-align: left;
-            top: 190%;
+            top: 80%;
             width: 125px;
             z-index: 220;
             visibility: hidden;
@@ -1714,10 +1714,10 @@
         }
     } 
     .header-top-area {
-        padding: 22px 0;
-        border-bottom: 1px solid #cecece;
+        padding: 2px 0;
+        border-bottom: 1px solid #cecece4e;
         &.header-top-border17 {
-            border-bottom: 1px solid #9f9f9f;
+            border-bottom: 1px solid #9f9f9f00;
         }
     }
     .header-right-wrap {

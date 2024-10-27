@@ -6,7 +6,7 @@ import FooterOne from "../wrappers/footer/FooterOne";
 const LayoutTwo = ({ children, footerBgClass }) => {
   return (
     <Fragment>
-      <HeaderTwo />
+      <HeaderTwo  top="visible"  />
       {children}
       <FooterOne
         backgroundColorClass={footerBgClass ? footerBgClass : "bg-gray"}

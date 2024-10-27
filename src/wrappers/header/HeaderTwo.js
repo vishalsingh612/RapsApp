@@ -5,15 +5,18 @@ import { changeCurrency } from "../../redux/actions/currencyActions";
 import { multilanguage } from "redux-multilanguage";
 import Logo from "../../components/header/Logo";
 import IconGroup from "../../components/header/IconGroup";
+import SecNavMenu from "../../components/header/SecNavMenu";
 import NavMenu from "../../components/header/NavMenu";
 import MobileMenu from "../../components/header/MobileMenu";
 import LanguageCurrencyChanger from "../../components/header/sub-components/LanguageCurrencyChanger";
+import HeaderTop from "../../components/header/HeaderTop";
 
 const HeaderTwo = ({
-  currency,
-  changeCurrency,
-  currentLanguageCode,
-  dispatch
+  layout,
+  top,
+  borderStyle,
+  headerPaddingClass,
+  headerBgClass
 }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
@@ -33,53 +36,57 @@ const HeaderTwo = ({
 
   return (
     <header className="header-area clearfix header-hm9 transparent-bar">
+      {/* Header Top Area */}
+      <div
+        className={`${headerPaddingClass ? headerPaddingClass : ""} ${
+          top === "visible" ? "" : "d-none"
+        } header-top-area .header-top-border17 ${
+          borderStyle === "border-none" 
+        }`}
+      >
+        <div className={layout === "container-fluid" ? layout : "container"}>
+          {/* Render HeaderTop */}
+          <HeaderTop  />
+        </div>
+      </div>
+      
+      {/* Main Header Area */}
+        {/* Sticky Header Bottom */}
+        <div
+        className={`header-bottom sticky-bar header-res-padding header-padding-2 ${
+          scroll > headerTop ? "stick" : ""
+        }`}
+      >
       <div className="container">
         <div className="header-top-area d-none d-lg-block">
           <div className="row">
-            <div className="col-lg-5 col-md-8 col-12">
-              {/* language currency changer */}
-              <LanguageCurrencyChanger
-                currency={currency}
-                changeCurrency={changeCurrency}
-                currentLanguageCode={currentLanguageCode}
-                dispatch={dispatch}
-              />
+            <div className="col-xl-2 col-lg-2 col-md-6 col-4">
+              {/* Header Logo */}
+              <Logo imageUrl="/assets/img/logo/logo-2.png" logoClass="logo" />
             </div>
-            <div className="col-lg-2 d-none d-lg-block text-center">
-              {/* header logo */}
-              <Logo
-                imageUrl="/assets/img/logo/logo.png"
-                logoClass="logo-hm-9"
-              />
+            <div className="col-xl-8 col-lg-8 d-none d-lg-block">
+              {/* Nav Menu */}
+              <NavMenu />
             </div>
-            <div className="col-lg-5 col-md-4 col-12">
-              {/* Icon group */}
+            <div className="col-xl-2 col-lg-2 col-md-6 col-8">
+              {/* Icon Group */}
               <IconGroup />
             </div>
           </div>
         </div>
       </div>
-      <div
-        className={`header-bottom sticky-bar header-res-padding header-padding-2 ${
-          scroll > headerTop ? "stick" : ""
-        }`}
-      >
+
+    
         <div className="container">
           <div className="row">
-            <div className="col-6 d-block d-lg-none">
-              {/* header logo */}
-              <Logo imageUrl="/assets/img/logo/logo.png" />
-            </div>
-            <div className="col-6 d-block d-lg-none">
-              {/* Icon group */}
-              <IconGroup />
-            </div>
-            <div className="col-xl-12 col-lg-12 d-none d-lg-block">
-              {/* Nav menu */}
-              <NavMenu />
+            
+           
+            <div className="col-xl-12 col-lg-12 d-none d-lg-block" style={{marginTop:"-8px"}}>
+              {/* Nav Menu for Desktop */}
+              <SecNavMenu />
             </div>
           </div>
-          {/* mobile menu */}
+          {/* Mobile Menu */}
           <MobileMenu />
         </div>
       </div>

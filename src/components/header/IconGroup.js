@@ -27,19 +27,57 @@ const IconGroup = ({
   return (
     <div
       className={`header-right-wrap ${iconWhiteClass ? iconWhiteClass : ""}`}
-    >
-      <div className="same-style header-search d-none d-lg-block">
-        <button className="search-active" onClick={e => handleClick(e)}>
+      style={{marginTop:"20px"}}
+    > 
+      <div className=" header-search d-none d-lg-block">
+        {/* <button className="search-active" onClick={e => handleClick(e)}>
           <i className="pe-7s-search" />
-        </button>
-        <div className="search-content">
-          <form action="#">
-            <input type="text" placeholder="Search" />
-            <button className="button-search">
-              <i className="pe-7s-search" />
-            </button>
-          </form>
-        </div>
+        </button> */}
+   <div className="search-content" style={{ 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    border: '1px solid #ccc', 
+    borderRadius: '4px', 
+    minWidth: window.innerWidth > 1200 ? '160px' : '80px', // Min width for search content
+    maxWidth: '100%', 
+    padding: '0px', 
+    boxSizing: 'border-box',
+    marginTop: '-12px'
+}}>
+  <form action="#" style={{ 
+      display: 'flex', 
+      alignItems: 'center', 
+      width: '100%'
+  }}>
+    <input 
+      type="text" 
+      placeholder="Search" 
+      style={{ 
+          border: 'none', 
+          outline: 'none', 
+          flex: '1', // Allows the input to take available space
+          padding: '10px',
+          minWidth: window.innerWidth > 1200 ? '80px' : '40px', // Min width for input field
+          width: '100%', // Ensures the input is responsive
+          boxSizing: 'border-box', // Ensures padding is included in width
+          background: "none"
+      }} 
+    />
+    <button 
+      className="button-search" 
+      style={{ 
+          backgroundColor: 'transparent', 
+          border: 'none', 
+          cursor: 'pointer', 
+          padding: '10px' // Ensures the button has space around it
+      }}
+    >
+      <i className="pe-7s-search" />
+    </button>
+  </form>
+</div>
+
       </div>
       <div className="same-style account-setting d-none d-lg-block">
         <button

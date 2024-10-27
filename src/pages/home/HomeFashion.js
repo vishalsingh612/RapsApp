@@ -17,8 +17,8 @@ const HomeFashion = () => {
         />
       </MetaTags>
       <LayoutOne
-        headerContainerClass="container-fluid"
-        headerPaddingClass="header-padding-1"
+        // headerContainerClass="container-fluid"
+        // headerPaddingClass="header-padding-1"
         headerTop="visible"
       >
         {/* hero slider */}
