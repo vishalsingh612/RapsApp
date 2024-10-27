@@ -95,6 +95,7 @@
 
 .product-tab-list {
     justify-content: center;
+    align-items: center;
     &.pt-30, &.pt-55 {
         @media #{$xs-layout}{
             padding: 10px 0 30px;
@@ -129,7 +130,11 @@
             }
         }
         &.active h4 {
-            color: #000;
+            color: white;
+            background-color: #000;
+            padding: 6px;
+            border-radius: 5px;
+
         }
     }
     &.product-tab-fruits {

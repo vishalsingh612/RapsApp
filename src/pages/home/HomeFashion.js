@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import MetaTags from "react-meta-tags";
 import LayoutOne from "../../layouts/LayoutOne";
-import HeroSliderOne from "../../wrappers/hero-slider/HeroSliderOne";
+import SliderBanner from "../../wrappers/slider-banner/SliderBanner";
 import FeatureIcon from "../../wrappers/feature-icon/FeatureIcon";
 import TabProduct from "../../wrappers/product/TabProduct";
 import BlogFeatured from "../../wrappers/blog-featured/BlogFeatured";
@@ -10,7 +10,7 @@ const HomeFashion = () => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Fashion Home</title>
+        <title>RapsApp Services | Doorstep Services in Himachal Pradesh</title>
         <meta
           name="description"
           content="Fashion home of flone react minimalist eCommerce template."
@@ -19,9 +19,10 @@ const HomeFashion = () => {
       <LayoutOne
         headerContainerClass="container-fluid"
         headerPaddingClass="header-padding-1"
+        headerTop="visible"
       >
         {/* hero slider */}
-        <HeroSliderOne />
+        <SliderBanner />
 
         {/* featured icon */}
         <FeatureIcon spaceTopClass="pt-100" spaceBottomClass="pb-60" />

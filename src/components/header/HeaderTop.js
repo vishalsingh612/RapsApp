@@ -26,10 +26,10 @@ const HeaderTop = ({
       />
       <div className="header-offer">
         <p>
-          Free delivery on order over{" "}
-          <span>
+        Exciting things are coming—stay tuned
+          {/* <span>
             {currency.currencySymbol + (200 * currency.currencyRate).toFixed(2)}
-          </span>
+          </span> */}
         </p>
       </div>
     </div>

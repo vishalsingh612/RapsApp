@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "title": "New Arrivals",
-    "subtitle": "Book Shop <br /> Find Your Book",
+    "title": "Coming Soon",
+    "subtitle": "Repairing Services <br /> Fix your TV today",
     "image": "/assets/img/slider/slider-11.jpg",
     "url": "/shop-grid-standard"
   },
   {
     "id": 2,
     "title": "New Arrivals",
-    "subtitle": "Book Shop <br /> Find Your Book",
+    "subtitle": "Repairing Services <br /> Repair Home Appliances",
     "image": "/assets/img/slider/slider-11-2.jpg",
     "url": "/shop-grid-standard"
   }

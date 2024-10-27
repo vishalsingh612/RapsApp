@@ -1671,7 +1671,8 @@ textarea:focus {
     position: relative;
     transition: all 0.5s ease-in-out 0s;
     &:hover {
-      border: 1px solid $theme-color;
+      border: 1px solid #35C2C1;
+      ;
       color: #fff;
     }
     &::before,
@@ -1689,7 +1690,7 @@ textarea:focus {
       width: 0;
       left: auto;
       right: 0;
-      background: $theme-color;
+      background: #35C2C1;
     }
     &:hover::after {
       width: 100%;

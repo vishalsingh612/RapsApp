@@ -20,7 +20,7 @@ const HeroSliderSevenSingle = ({ data, sliderClass }) => {
         />
         <div className="slider-btn-9 btn-hover">
           <Link className="animated" to={data.url}>
-            SHOP NOW
+            Schedule Services
           </Link>
         </div>
       </div>

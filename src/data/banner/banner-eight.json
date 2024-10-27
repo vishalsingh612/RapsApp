@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "image": "/assets/img/banner/banner-38.png",
-    "title": "Book",
+    "image": "/assets/img/banner/main-sideservice-2.png",
+    "title": "Cleanliness Services",
     "subtitle": "Starting at",
-    "price": "$99.00",
+    "price": "99.00",
     "link": "/shop-grid-standard"
   },
   {
     "id": 2,
-    "image": "/assets/img/banner/banner-39.png",
-    "title": "Book",
+    "image": "/assets/img/banner/main-sideservice-1.png",
+    "title": "Beauticians Services",
     "subtitle": "Starting at",
-    "price": "$79.00",
+    "price": "79.00",
     "link": "/shop-grid-standard"
   }
 ]

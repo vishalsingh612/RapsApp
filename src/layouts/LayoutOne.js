@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import HeaderOne from "../wrappers/header/HeaderOne";
 import FooterOne from "../wrappers/footer/FooterOne";
 
+
 const LayoutOne = ({
   children,
   headerContainerClass,
